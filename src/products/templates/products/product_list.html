@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
+<table class='table'>
+{% for object in object_list %}
+
+<tr>
+<!--<td>{{ object.title }}</td>-->
+<a href="{{ object.get_absolute_url}}">{{ object.title }}</a>
+
+</tr>
+
+{% endfor %}
+</table>
+
+
+{% endblock %}
